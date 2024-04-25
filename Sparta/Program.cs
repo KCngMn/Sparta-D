@@ -1,6 +1,4 @@
-﻿
-
-namespace Sparta
+﻿namespace Sparta
 {
 
 
