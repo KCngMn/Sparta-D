@@ -239,35 +239,28 @@
                     {
                         if (!item.I_buy)
                         {
-                            if (item.Attack == 0)
-                                Console.WriteLine($"- {item.Name}   | 방어력 +{item.Shield} | {item.Info}   | {item.Gold} G");
-
-                            else
-                                Console.WriteLine($"- {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   | {item.Gold} G");
+                            if (item.Attack == 0)Console.WriteLine($"- {item.Name}   | 방어력 +{item.Shield} | {item.Info}   | {item.Gold} G");
+                            else Console.WriteLine($"- {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   | {item.Gold} G");
                         }
                         else
                         {
-                            if (item.Attack == 0)
-                                Console.WriteLine($"- {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   |  구매완료");
-                            else
-                                Console.WriteLine($"- {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   |  구매완료");
+                            if (item.Attack == 0)Console.WriteLine($"- {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   |  구매완료");  
+                            else Console.WriteLine($"- {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   |  구매완료");       
                         }
                     }
                     else
                     {
                         if (!item.I_buy)
                         {
-                            if (item.Attack == 0)
-                                Console.WriteLine($"- {i++} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   | {item.Gold} G");
-                            else
-                                Console.WriteLine($"- {i++} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   | {item.Gold} G");
+                            if (item.Attack == 0)Console.WriteLine($"- {i++} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   | {item.Gold} G");
+                                
+                            else Console.WriteLine($"- {i++} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   | {item.Gold} G");
+                               
                         }
                         else
                         {
-                            if (item.Attack == 0)
-                                Console.WriteLine($"- {i++} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   |  구매완료");
-                            else
-                                Console.WriteLine($"- {i++} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   |  구매완료");
+                            if (item.Attack == 0) Console.WriteLine($"- {i++} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}   |  구매완료");
+                            else Console.WriteLine($"- {i++} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}   |  구매완료");
                         }
                     }
                 }
@@ -370,17 +363,13 @@
                 {
                     if (!item.I_equip)
                     {
-                        if (item.Attack == 0)
-                            Console.WriteLine($"- {item.Id} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}");
-                        else
-                            Console.WriteLine($"- {item.Id} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}");
+                        if (item.Attack == 0) Console.WriteLine($"- {item.Id} {item.Name}   | 방어력 +{item.Shield}   | {item.Info}");
+                        else Console.WriteLine($"- {item.Id} {item.Name}   | 공격력 +{item.Attack}   | {item.Info}");
                     }
                     else
                     {
-                        if (item.Attack == 0)
-                            Console.WriteLine($"- {item.Id} [E] {item.Name}   | 방어력 +{item.Shield}   | {item.Info}");
-                        else
-                            Console.WriteLine($"- {item.Id} [E] {item.Name}   | 공격력 +{item.Attack}   | {item.Info}");
+                        if (item.Attack == 0)Console.WriteLine($"- {item.Id} [E] {item.Name}   | 방어력 +{item.Shield}   | {item.Info}");
+                        else Console.WriteLine($"- {item.Id} [E] {item.Name}   | 공격력 +{item.Attack}   | {item.Info}");
                     }
                 }
             }
