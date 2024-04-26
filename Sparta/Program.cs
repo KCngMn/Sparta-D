@@ -98,19 +98,7 @@
             }
             public void ItemBuy(Player player)
             {
-                if (!I_buy)
-                {
-                    if (player.Money - Gold > 0)
-                    {
-                        player.Money -= Gold;
-                        I_buy = true;
-                        Console.WriteLine("구매를 완료했습니다.");
-                    }
-                    else
-
-                        Console.WriteLine("Gold가 부족합니다.");
-                }
-            }
+              
         }
 
         // 시작시  화면
